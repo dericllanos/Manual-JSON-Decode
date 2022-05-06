@@ -14,7 +14,7 @@ final class NetworkManager {
     
     func getDragonsManually() -> Dragons? {
         let fileName = "DragonsRaw"
-        guard let path = Bundle.main.path(forResource: fileName, ofType: "json") else {
+        guard let path = Bundle.main.path(forResource: fileName, ofType: "JSON") else {
             print("Path not found.")
             return nil
         }
@@ -88,7 +88,7 @@ final class NetworkManager {
             guard let gameIndex = $0["game_index"] as? Int else { return }
             guard let gameGen = $0["generation"] as? [String: Any] else { return }
             guard let generation = self.createBasicData(dict: gameGen) else { return }
-            gameIndeces.append(GameIndex(gameIndex: gameIndex, generation: generation))
+            gameIndeces.append(GameIndex(game_index: gameIndex, generation: generation))
         }
         
         // Game Generation
@@ -118,10 +118,10 @@ final class NetworkManager {
             guard let pokemansDict = $0["pokemon"] as? [String:Any] else { return }
             guard let pokemans = self.createBasicData(dict: pokemansDict) else { return }
             guard let slot = $0["slot"] as? Int else { return }
-            pokemon.append(Pokemon(pokemans: pokemans, slot: slot))
+            pokemon.append(Pokemon(pokemon: pokemans, slot: slot))
         }
         
-        return Dragons(damage_relations: damage_relations, game_indeces: gameIndeces, generation: dragonGen, id: dragonID, md_class: md_class, moves: moves, name: name, pokemon: pokemon)
+        return Dragons(game_indices: gameIndeces, generation: dragonGen, id: dragonID, move_damage_class: md_class, moves: [moves], name: name, pokemon: pokemon)
     }
     
     func createBasicData(dict: [String:Any]) -> BasicData? {

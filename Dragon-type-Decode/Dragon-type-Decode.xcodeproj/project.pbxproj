@@ -91,8 +91,8 @@
 		EE2359692823FC4900A14893 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EE235970282406D300A14893 /* Dragons.swift */,
 				EE23596D282400D400A14893 /* Network */,
+				EE235970282406D300A14893 /* Dragons.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

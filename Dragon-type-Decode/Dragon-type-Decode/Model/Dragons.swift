@@ -8,13 +8,13 @@
 import Foundation
 
 struct Dragons: Decodable {
-    var damage_relations: [DamageRelations]
-    var game_indeces: [GameIndex]
+    //var damage_relations: DamageRelations
+    var game_indices: [GameIndex]
     var generation: BasicData
-    var id: Int
-    var md_class: BasicData
-    var moves: BasicData
-    var name: String
+    var id: Int?
+    var move_damage_class: BasicData
+    var moves: [BasicData]
+    var name: String?
     var pokemon: [Pokemon]
 }
 
@@ -28,18 +28,18 @@ struct DamageRelations: Decodable {
 }
 
 struct GameIndex: Decodable {
-    var gameIndex: Int
+    var game_index: Int?
     var generation: BasicData
 }
 
 struct Pokemon: Decodable {
-    var pokemans: BasicData
-    var slot: Int
+    var pokemon: BasicData
+    var slot: Int?
 }
 
 struct BasicData: Decodable {
-    var name: String
-    var url: String
+    var name: String?
+    var url: String?
 }
 
 
