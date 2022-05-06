@@ -12,9 +12,9 @@
 		EE2359582823FC0800A14893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2359572823FC0800A14893 /* ViewController.swift */; };
 		EE23595D2823FC0900A14893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE23595C2823FC0900A14893 /* Assets.xcassets */; };
 		EE2359602823FC0900A14893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE23595E2823FC0900A14893 /* LaunchScreen.storyboard */; };
-		EE23596C282400BB00A14893 /* Dragons_Raw.JSON in Resources */ = {isa = PBXBuildFile; fileRef = EE23596B282400BB00A14893 /* Dragons_Raw.JSON */; };
 		EE23596F282402CC00A14893 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23596E282402CC00A14893 /* NetworkManager.swift */; };
 		EE235971282406D300A14893 /* Dragons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE235970282406D300A14893 /* Dragons.swift */; };
+		EE49B74728253906008BEFDC /* DragonsRaw.JSON in Resources */ = {isa = PBXBuildFile; fileRef = EE23596B282400BB00A14893 /* DragonsRaw.JSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		EE23595C2823FC0900A14893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE23595F2823FC0900A14893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE2359612823FC0900A14893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE23596B282400BB00A14893 /* Dragons_Raw.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Dragons_Raw.JSON; sourceTree = "<group>"; };
+		EE23596B282400BB00A14893 /* DragonsRaw.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DragonsRaw.JSON; sourceTree = "<group>"; };
 		EE23596E282402CC00A14893 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EE235970282406D300A14893 /* Dragons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,7 +107,7 @@
 		EE23596D282400D400A14893 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EE23596B282400BB00A14893 /* Dragons_Raw.JSON */,
+				EE23596B282400BB00A14893 /* DragonsRaw.JSON */,
 				EE23596E282402CC00A14893 /* NetworkManager.swift */,
 			);
 			path = Network;
@@ -171,7 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE23596C282400BB00A14893 /* Dragons_Raw.JSON in Resources */,
+				EE49B74728253906008BEFDC /* DragonsRaw.JSON in Resources */,
 				EE2359602823FC0900A14893 /* LaunchScreen.storyboard in Resources */,
 				EE23595D2823FC0900A14893 /* Assets.xcassets in Resources */,
 			);

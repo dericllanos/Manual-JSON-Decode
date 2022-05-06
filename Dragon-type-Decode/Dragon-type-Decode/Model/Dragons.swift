@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Dragons {
+struct Dragons: Decodable {
     var damage_relations: [DamageRelations]
     var game_indeces: [GameIndex]
     var generation: BasicData
@@ -18,26 +18,26 @@ struct Dragons {
     var pokemon: [Pokemon]
 }
 
-struct DamageRelations {
-    var ddfrom: BasicData
-    var ddto: BasicData
-    var hdfrom: BasicData
-    var hdto: BasicData
-    var ndfrom: BasicData
-    var ndto: BasicData
+struct DamageRelations: Decodable {
+    var ddfrom: [BasicData]
+    var ddto: [BasicData]
+    var hdfrom: [BasicData]
+    var hdto: [BasicData]
+    var ndfrom: [BasicData]
+    var ndto: [BasicData]
 }
 
-struct GameIndex {
+struct GameIndex: Decodable {
     var gameIndex: Int
     var generation: BasicData
 }
 
-struct Pokemon {
+struct Pokemon: Decodable {
     var pokemans: BasicData
     var slot: Int
 }
 
-struct BasicData {
+struct BasicData: Decodable {
     var name: String
     var url: String
 }

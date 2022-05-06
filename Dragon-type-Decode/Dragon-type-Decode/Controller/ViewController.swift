@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     @objc
     func buttonPressed() {
         guard let dragons = NetworkManager.shared.getDragonsManually() else {
-            print("Network Error \nNewline Test")
+            print("Network Error")
             return }
         presentAlert(dragons: dragons)
     }
